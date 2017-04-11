@@ -1,18 +1,29 @@
+// PAGE TITLE
 .home-page-title{
-
-  font-family: $font-family-serif;
-  font-size: 4rem;
-  font-weight: 600;
-  color: $brand-black;
-  a{
+  text-align: center;
+  height: 100%;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  h1{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: $font-family-serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 400;
     color: $brand-white;
   }
 }
 
+// THIS IS THE WHOLE PAGE
 .body{
-  height: 100%;
   width: 100%;
-  // margin: 0;
+  height: 100%;
   background-image:
     linear-gradient(
       to right,
@@ -26,22 +37,7 @@
   align-items: center;
 }
 
-// .content{
-//   p{
-//     font-size:1.2rem;
-//     line-height: 1.5;
-//     font-family: $font-family-serif;
-//   }
-//   a{
-//     font-family: $font-family-serif;
-//     color: $brand-black;
-//     text-decoration: none;
-//   }
-//   a:hover{
-//     color: $brand-blue;
-//   }
-// }
-
+// THIS IS THE ENTIRE BOX WHICH HOLDS CONTENT
 .box{
   height: 80%;
   width: 80%;
@@ -50,40 +46,58 @@
   -webkit-box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
   box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
-
+  @media (max-width:600px){
+    width: 100%;
+    height: 100%;
+  }
 }
 
+// THIS IS THE HOMEPAGE PICTURE
 .main-image-container{
   height: 100%;
   width: 50%;
-  background-color: red;
+  min-heigh: 500px;
   float: left;
   object-fit: cover;
+  @media (max-width:991px){
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width:768px){
+    width: 100%;
+    height: 100%;
+  }
 }
 
+// THIS IS THE CONTAINER WITH LINKS AND PARAGRAPHS
 .main-content{
   height: 100%;
   width: 50%;
-  background-color: white;
+  min-height: 500px;
   float: right;
-  display:flex;
-  justify-content:center;
-  align-items:flex-end;
-  width:50%;
-  font-size:3em;
+  background-color: white;
+  overflow: scroll;
+  @media (max-width:991px){
+    width: 100%;
+    height: 100%;
+  }
+  p{
+    font-size: 1em;
+    color: $brand-black;
+    text-align: left;
+  }
+  a{
+    text-decoration: none;
+    color: $brand-black;
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+  a:hover{
+    color: #A3B597;
+  }
 }
 
-.main-content p {
-  color: green;
+.main-content-text{
+    margin-top: 20%;
+    margin-left: 10%;
 }
-
-// // Make hero image responsive
-.hero img{
-    height:100%;
-    width: auto;
-    max-width:1000px;
-}
-
-// .home-links a{
-//   text-decoration: none;
-// }

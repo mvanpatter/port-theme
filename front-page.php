@@ -8,14 +8,27 @@
 
 <div class="body">
   <div class="box">
-    <div class="main-image-container hero">
-      <?php the_post_thumbnail('hero'); ?>
-      <h1 class="home-page-title"><?php the_title(); ?></h1>
 
+    <div class="main-image-container hero">
+
+      <?php
+
+        if( has_post_thumbnail() ){
+      ?>
+
+        <div class="home-page-title" style="background-image: url(<?php the_post_thumbnail_url(''); ?>)">
+          <h1><?php the_title(); ?></h1>
+        </div>
+
+      <?php } ?>
     </div>
+
     <div class="main-content">
-      <?php the_content(); ?>
+        <div class="main-content-text"
+          <?php the_content(); ?>
+        </div>
     </div>
+
   </div>
 </div>
 
