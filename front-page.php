@@ -1,6 +1,6 @@
 <?php get_template_part('partials/head'); ?>
 <html>
-<body>
+<body class="body">
 <!--  <body <?php body_class(); ?>> -->
 <!-- <?php get_template_part('partials/header'); ?> -->
 

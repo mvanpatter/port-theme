@@ -1,12 +1,12 @@
 <?php get_template_part('partials/head'); ?>
 <html>
-  <body <?php body_class(); ?>>
+  <body class="nav" <?php body_class(); ?>>
 <?php get_template_part('partials/header'); ?>
 
 </div>
 
 <main class="container">
-
+<div class="body">
 
 
   <?php
@@ -26,6 +26,7 @@
 <?php
   endwhile;
 ?>
+</div>
 </main>
 
 <?php the_posts_navigation(); ?>
