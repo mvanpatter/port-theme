@@ -32,9 +32,21 @@
 
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
-  register_nav_menus( array(
-    'primary_navigation' => 'Primary Navigation'
-  ) );
+  // register_nav_menus( array(
+  //   'primary_navigation' => 'Primary Navigation'
+  // ) );
+
+  /* Theme setup */
+  // https://code.tutsplus.com/tutorials/how-to-integrate-a-bootstrap-navbar-into-a-wordpress-theme--wp-33410
+  add_action( 'after_setup_theme', 'wpt_setup' );
+      if ( ! function_exists( 'wpt_setup' ) ):
+          function wpt_setup() {
+              register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+          } endif;
+
+
+
+
 
   // Add post thumbnails
   // http://codex.wordpress.org/Post_Thumbnails
@@ -69,3 +81,22 @@
     remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
   } );
+
+
+//   Register bootstrap files and jQuery:
+// https://code.tutsplus.com/tutorials/how-to-integrate-a-bootstrap-navbar-into-a-wordpress-theme--wp-33410
+
+  function wpt_register_js() {
+    wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
+    wp_enqueue_script('jquery.bootstrap.min');
+}
+add_action( 'init', 'wpt_register_js' );
+function wpt_register_css() {
+    wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap.min' );
+}
+add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
+
+<?php // Register custom navigation walker
+    require_once('wp_bootstrap_navwalker.php');
+?>
