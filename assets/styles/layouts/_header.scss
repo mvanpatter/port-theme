@@ -1,5 +1,8 @@
-.nav {
-  background-color: lightblue;
-  width: 100%;
-  text-align: center;
+.navbar{
+  height: 4rem;
+}
+
+.navbar-toggleable-md{
+  height: auto;
+  min-height: 4rem;
 }
