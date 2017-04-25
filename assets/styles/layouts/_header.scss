@@ -2,7 +2,17 @@
   height: 4rem;
 }
 
+.bg-faded{
+  background-color: transparent;
+}
+
 .navbar-toggleable-md{
   height: auto;
   min-height: 4rem;
+}
+
+a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
 }

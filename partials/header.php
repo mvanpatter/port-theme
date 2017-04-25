@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:400,400i,700" rel="stylesheet">
+
 <header class="banner">
   <nav class="">
 

@@ -1,12 +1,12 @@
 <?php get_template_part('partials/head'); ?>
 <html>
 <body class="body">
-<!--  <body <?php body_class(); ?>> -->
+<!--  <body <?php body_class(); ?> -->
 <!-- <?php get_template_part('partials/header'); ?> -->
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="body">
+<div class="front-page-body">
   <div class="box">
 
     <div class="main-image-container hero">
