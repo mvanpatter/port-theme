@@ -1,8 +1,7 @@
 <?php get_template_part('partials/head'); ?>
 <html>
-<body class="body">
-<!--  <body <?php body_class(); ?> -->
-<!-- <?php get_template_part('partials/header'); ?> -->
+<body <?php body_class(); ?>>
+<?php // get_template_part('partials/header'); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -35,25 +34,6 @@
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-
+  <?php get_template_part('partials/footer'); ?>
   </body>
 </html>
-
-<!-- // The Loop
-<?php
-while (have_posts()) : the_post();
-?>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="content">
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
-      </div>
-
-    </div>
-  </div>
-
-<?php
-endwhile;
-?> -->
