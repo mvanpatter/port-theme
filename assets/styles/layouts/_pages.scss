@@ -1,139 +1,43 @@
 // PAGE TITLE
-.home-page-title{
-  text-align: center;
-  height: 100%;
-  text-align: center;
+
+
+
+// BACKGROUND IMAGE
+
+#welcome-intro{
   background-size: cover;
-  background-position: center center;
-  position: relative;
-  h1{
-    position: absolute;
-    top: 75%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-family: $font-family-serif;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 400;
-    color: $brand-white;
-  }
 }
+
+
 
 // THIS IS THE WHOLE PAGE
 .front-page-body{
-  width: 100%;
-  height: 100%;
-  background-image:
-    linear-gradient(
-      to right,
-      #ECF0D3,
-      #F2E9B2,
-      #ECF0D3,
-      #F2E9B2
-    );
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-// THIS IS THE ENTIRE BOX WHICH HOLDS CONTENT
-.box{
-  height: 80%;
-  width: 80%;
-  max-width: 2000px;
-  background-color: white;
-  -webkit-box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
-  box-shadow: -1px 0px 23px -4px rgba(0,0,0,0.75);
-  @media (max-width:768px){
-    width: 100%;
-    height: 100%;
-  }
-}
 
 // THIS IS THE HOMEPAGE PICTURE
 .main-image-container{
-  height: 100%;
-  width: 50%;
-  min-heigh: 500px;
-  float: left;
-  object-fit: cover;
-  @media (max-width:991px){
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width:768px){
-    width: 100%;
-    height: 100%;
-    max-height: 600px;
-    overflow: hidden;
-  }
-  @media (max-width:414px){
-    width: 100%;
-    height: 100%;
-    max-height: 400px;
-    overflow: hidden;
+}
+
+.home-page-title{
+  h1{
+    margin-top: 1em;
+    margin-left: 2em;
   }
 }
 
 // THIS IS THE CONTAINER WITH LINKS AND PARAGRAPHS
 .main-content{
-  height: 100%;
-  width: 50%;
-  min-height: 500px;
-  float: right;
-  background-color: white;
-  overflow: scroll;
-  @media (max-width:991px){
-    width: 100%;
-    height: auto;
-    min-height: 400px;
-  }
-  p{
-    font-size: 1em;
-    color: $brand-black;
-    text-align: left;
-  }
-  a{
-    text-decoration: none;
-    color: $brand-black;
-    font-size: 1.3em;
-    font-weight: 400;
-  }
-  a:hover{
-    color: #A3B597;
-  }
 }
 
 .main-content-text{
-    margin-top: 20%;
-    margin-left: 10%;
-    @media (max-width:991px){
-      margin-top: 5%;
-      margin-left: 5%;
-      margin-bottom: 5%;
-    }
-    @media (max-width:414px){
-      margin-top: 5%;
-      margin-left: 5%;
-      margin-bottom: 5%;
-    }
+  // h2{
+  //   margin-left:2em;
+  //   margin-top: 5em;
 }
 
 
 // Styling for single-page content
 
 .content{
-  padding-top: 5%;
-
-  h2{
-    text-align: center;
-    font-family: $font-family-serif;
-    font-size: 3rem;
-  }
-  p{
-    padding-top: 2rem;
-    font-family: $font-family-sans-serif;
-  }
 }

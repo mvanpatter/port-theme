@@ -1,25 +1,27 @@
 <?php get_template_part('partials/head'); ?>
 <html>
+
+<!-- Background image -->
+
+  <?php $page = get_page_by_title ( 'Welcome' ); ?>
+  <?php if ( $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' ) ) : ?>
+
+    <div style="background: url('<?php echo $background[0]; ?>') top right no-repeat; height:900px;" id="welcome-intro" class="clear">
+
+  <?php endif; ?>
+
 <body <?php body_class(); ?>>
+
+
+
 <?php // get_template_part('partials/header'); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="front-page-body">
-  <div class="box">
+
 
     <div class="main-image-container hero">
 
-      <?php
-
-        if( has_post_thumbnail() ){
-      ?>
-
-        <div class="home-page-title" style="background-image: url(<?php the_post_thumbnail_url(''); ?>)">
-          <h1><?php the_title(); ?></h1>
-        </div>
-
-      <?php } ?>
     </div>
 
     <div class="main-content">
@@ -27,9 +29,6 @@
           <?php the_content(); ?>
         </div>
     </div>
-
-  </div>
-</div>
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

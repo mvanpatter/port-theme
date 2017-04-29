@@ -70,8 +70,8 @@ class bs4Navwalker extends Walker_Nav_Menu
          */
         $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
         // New
-        $class_names .= ' nav-item';
-        
+        $class_names .= ' nav-item text-center';
+
         if (in_array('menu-item-has-children', $classes)) {
             $class_names .= ' dropdown';
         }
