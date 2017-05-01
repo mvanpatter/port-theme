@@ -4,40 +4,34 @@
 
 // BACKGROUND IMAGE
 
-#welcome-intro{
-  background-size: cover;
+.square{
+      width: 200px;
+      height: 200px;
+      background: red;
 }
 
 
 
 // THIS IS THE WHOLE PAGE
-.front-page-body{
-}
+
 
 
 // THIS IS THE HOMEPAGE PICTURE
-.main-image-container{
-}
 
-.home-page-title{
-  h1{
-    margin-top: 1em;
-    margin-left: 2em;
-  }
-}
-
-// THIS IS THE CONTAINER WITH LINKS AND PARAGRAPHS
-.main-content{
-}
-
-.main-content-text{
-  // h2{
-  //   margin-left:2em;
-  //   margin-top: 5em;
-}
+// .home-page-title{
+//   h1{
+//     margin-top: 1em;
+//     margin-left: 2em;
+//   }
+// }
 
 
-// Styling for single-page content
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {}
 
-.content{
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
 }
