@@ -1,5 +1,25 @@
+<<<<<<< HEAD
 .nav{
 .bg-faded{
   background-color: blue;
 }
+=======
+.navbar{
+  height: 4rem;
+}
+
+.bg-faded{
+  background-color: transparent;
+}
+
+.navbar-toggleable-md{
+  height: auto;
+  min-height: 4rem;
+}
+
+a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+>>>>>>> parent of 2c6ee53... Centered Nav
 }

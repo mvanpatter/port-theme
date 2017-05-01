@@ -10,7 +10,7 @@
 
     public function load_scripts(){
       global $post;
-      wp_enqueue_style('google/fonts', 'https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:400,400i,700' );
+
       wp_enqueue_style('cardinal/css', get_template_directory_uri() . '/dist/styles/main.css', false, filemtime( get_template_directory() . '/dist/styles/main.css' )	);
 
 
@@ -20,7 +20,7 @@
       wp_enqueue_script( 'jquery' );
 
       wp_enqueue_script('cardinal/js', get_template_directory_uri() . '/dist/scripts/main.js', ['jquery'], filemtime( get_template_directory() . '/dist/scripts/main.js' ), true);
-
+      
     }
 
   }

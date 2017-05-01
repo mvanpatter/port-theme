@@ -1,6 +1,6 @@
 <?php get_template_part('partials/head'); ?>
 <html>
-  <body class="<?php body_class(); ?>">
+  <body class="nav" <?php body_class(); ?>>
 <?php get_template_part('partials/header'); ?>
 
 </div>
@@ -15,7 +15,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <div id="post-<?php the_ID(); ?>" class="content post-<?php the_ID(); ?>">
+          <div class="content">
             <h2><?php the_title(); ?></h2>
             <?php the_content(); ?>
           </div>
